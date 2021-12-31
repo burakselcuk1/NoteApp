@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "962342848604",
+    "project_id": "noteapp-da872",
+    "storage_bucket": "noteapp-da872.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962342848604:android:b7861fcde90bba3d73be99",
+        "android_client_info": {
+          "package_name": "me.ibrahimsn.smoothbottombar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962342848604-tt2utshjl0aphd4ovdnhjcf7c9kp8pfb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFqAqP09LO_OEp6lhF4iBZORx5ua551Rs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962342848604-tt2utshjl0aphd4ovdnhjcf7c9kp8pfb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

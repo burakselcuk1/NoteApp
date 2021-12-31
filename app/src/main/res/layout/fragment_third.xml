@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".fragmens.SecondFragment">
+
+
+    <EditText
+        android:id="@+id/update_head"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="36dp"
+        android:textColor="@color/white"
+        android:ems="10"
+        app:layout_constraintHeight_percent="0.1"
+        android:hint="Head"
+        android:textColorHint="#DDBFBFBF"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:background="#610B95"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/update_description"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="44dp"
+
+        android:gravity="top|left"
+        android:ems="10"
+        android:textStyle="bold"
+        android:textColorHint="#DDBFBFBF"
+        android:background="#610B95"
+        android:hint="Description"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_head" />
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintWidth_percent="0.45"
+        android:background="@drawable/view_back"
+        android:text="Update note"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_description" />
+
+
+    <Button
+        android:id="@+id/delete_note"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/view_back"
+        app:layout_constraintEnd_toEndOf="@+id/update_description"
+        app:layout_constraintStart_toEndOf="@+id/update_button"
+        app:layout_constraintTop_toTopOf="@+id/update_button"
+        android:text="DELETE NOTE"
+        android:textColor="@color/white"
+        app:layout_constraintWidth_percent="0.45" />
+</androidx.constraintlayout.widget.ConstraintLayout>

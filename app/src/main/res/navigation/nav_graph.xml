@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/first_fragment">
+
+    <fragment
+        android:id="@+id/first_fragment"
+        android:name="me.ibrahimsn.smoothbottombar.fragmens.FirstFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/second_fragment" />
+        <action
+            android:id="@+id/action_first_fragment_to_third_fragment"
+            app:destination="@id/third_fragment" />
+
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/second_fragment"
+        android:name="me.ibrahimsn.smoothbottombar.fragmens.SecondFragment"
+        android:label="Leaderboard"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_thirdFragment"
+            app:destination="@id/third_fragment" />
+
+        <action
+            android:id="@+id/action_second_fragment_to_first_fragment"
+            app:destination="@id/first_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/third_fragment"
+        android:name="me.ibrahimsn.smoothbottombar.fragmens.ThirdFragment"
+        android:label="Store"
+        tools:layout="@layout/fragment_third" >
+
+        <action
+            android:id="@+id/action_third_fragment_to_fourth_fragment"
+            app:destination="@id/fourth_fragment" />
+        <action
+            android:id="@+id/action_third_fragment_to_second_fragment"
+            app:destination="@id/second_fragment" />
+        <argument
+            android:name="currentUser"
+            app:argType="me.ibrahimsn.smoothbottombar.ui.model.notes" />
+        <action
+            android:id="@+id/action_third_fragment_to_first_fragment"
+            app:destination="@id/first_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourth_fragment"
+        android:name="me.ibrahimsn.smoothbottombar.fragmens.FourthFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_fourth" >
+        <action
+            android:id="@+id/action_fourth_fragment_to_third_fragment"
+            app:destination="@id/third_fragment" />
+        <action
+            android:id="@+id/action_fourth_fragment_to_updataProfileFragment"
+            app:destination="@id/updataProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updataProfileFragment"
+        android:name="me.ibrahimsn.smoothbottombar.fragmens.UpdataProfileFragment"
+        android:label="fragment_updata_profile"
+        tools:layout="@layout/fragment_updata_profile" >
+        <action
+            android:id="@+id/action_updataProfileFragment_to_fourth_fragment"
+            app:destination="@id/fourth_fragment" />
+    </fragment>
+</navigation>
